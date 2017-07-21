@@ -30,17 +30,17 @@ import hudson.model.Result;
 public enum Style {
 
     /**
-     * A happy Chuck Norris showing a thumb up.
+     * A picture of Scruffy exjoying a cookie.
      */
-    THUMB_UP,
+    SNACK,
     /**
-     * An alert Chuck Norris with a martial arts stance.
+     * A relaxed Scruffy on break.
      */
-    ALERT,
+    ONBREAK,
     /**
-     * A total bad ass Chuck Norris ready to give you a good ass whoopin'.
+     * Scruffy looking upset with the failed build.
      */
-    BAD_ASS;
+    STARE;
 
     /**
      * Gets the style corresponding to the build result.
@@ -51,11 +51,11 @@ public enum Style {
     public static final Style get(final Result result) {
         Style style;
         if (Result.FAILURE.equals(result)) {
-            style = BAD_ASS;
+            style = STARE;
         } else if (Result.SUCCESS.equals(result)) {
-            style = THUMB_UP;
+            style = SNACK;
         } else {
-            style = ALERT;
+            style = ONBREAK;
         }
         return style;
     }

@@ -37,7 +37,7 @@ public final class RoundhouseAction implements Action {
      * The style - for backward compatibility to version 0.2.
      */
     private Style style;
-    
+
     /**
      * The style.
      */
@@ -47,7 +47,7 @@ public final class RoundhouseAction implements Action {
      * The fact - for backward compatibility to version 0.2.
      */
     private String fact;
-    
+
     /**
      * The fact.
      */
@@ -71,7 +71,7 @@ public final class RoundhouseAction implements Action {
      * @return the display name
      */
     public String getDisplayName() {
-        return "Chuck Norris";
+        return "Scruffy";
     }
 
     /**
@@ -87,7 +87,7 @@ public final class RoundhouseAction implements Action {
      * @return the URL name
      */
     public String getUrlName() {
-        return "chucknorris";
+        return "scruffy";
     }
 
     /**
